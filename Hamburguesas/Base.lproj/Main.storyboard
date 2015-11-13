@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,14 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-tQ-Bmc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaL-tQ-Bmc">
                                 <rect key="frame" x="20" y="62" width="280" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PHn-xy-HWg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-ll-rlA">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-ll-rlA">
                                 <rect key="frame" x="72" y="476" width="177" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Quiero una hamburguesa!"/>
@@ -32,23 +36,42 @@
                                     <action selector="pedir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHf-6x-880"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3s-6X-92B">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3s-6X-92B">
                                 <rect key="frame" x="20" y="306" width="280" height="21"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="dhA-eu-PbZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQN-Vz-2eS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQN-Vz-2eS">
                                 <rect key="frame" x="20" y="160" width="280" height="72"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="VVP-mH-gaY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.96304201178361903" blue="0.60694093120953663" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zbl-ll-rlA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3m7-CY-VYT"/>
+                            <constraint firstItem="VaL-tQ-Bmc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7n8-Qo-jdx"/>
+                            <constraint firstItem="t3s-6X-92B" firstAttribute="top" secondItem="dQN-Vz-2eS" secondAttribute="bottom" constant="74" id="AYf-c2-s9f"/>
+                            <constraint firstItem="t3s-6X-92B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJd-QD-KxJ"/>
+                            <constraint firstItem="dQN-Vz-2eS" firstAttribute="leading" secondItem="t3s-6X-92B" secondAttribute="leading" id="Fa8-sy-9B3"/>
+                            <constraint firstItem="dQN-Vz-2eS" firstAttribute="top" secondItem="VaL-tQ-Bmc" secondAttribute="bottom" constant="77" id="HPa-kZ-FTo"/>
+                            <constraint firstItem="dQN-Vz-2eS" firstAttribute="leading" secondItem="VaL-tQ-Bmc" secondAttribute="leading" id="O33-sA-kke"/>
+                            <constraint firstItem="VaL-tQ-Bmc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="4" id="OUS-3N-HnZ"/>
+                            <constraint firstItem="dQN-Vz-2eS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEE-bz-2OB"/>
+                            <constraint firstItem="Q29-dL-9sc" firstAttribute="top" secondItem="Zbl-ll-rlA" secondAttribute="bottom" constant="62" id="hU8-gb-on7"/>
+                            <constraint firstItem="VaL-tQ-Bmc" firstAttribute="top" secondItem="rn0-pW-QZu" secondAttribute="bottom" constant="42" id="hzg-hK-bRe"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="hamburguesa" destination="dQN-Vz-2eS" id="VLa-Yx-oXD"/>
@@ -58,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="285"/>
+            <point key="canvasLocation" x="296" y="304"/>
         </scene>
     </scenes>
 </document>
